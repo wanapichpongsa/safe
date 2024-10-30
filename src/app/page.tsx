@@ -46,6 +46,9 @@ export default function Home() {
             {/* Squares has to be squares */}
             {/* Philipp 4x Consulting hackathon winner*/}
       </div>
+      <div className="flex flex-col items-center justify-center" id="blog">
+
+      </div>
           
 
     </main>

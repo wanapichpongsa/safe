@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import clsx from "clsx";
 
 // Outfit doesn't look that good, I might just use Neue Helvetica
 const outfitRegular = localFont({
@@ -55,7 +45,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfitRegular.variable} ${outfitBold.variable} antialiased`}
+        className={clsx(
+          "h-full antialiased font-display",
+          "bg-white lg:bg-zinc-100 dark:bg-zinc-900 dark:lg:bg-zinc-950",
+          outfitRegular.variable, 
+          outfitBold.variable, 
+        )}
+        suppressHydrationWarning
       >
         {children}
       </body>
