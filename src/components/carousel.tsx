@@ -7,7 +7,7 @@
 import useEmblaCarousel from 'embla-carousel-react'
 // Next.js
 import Image from 'next/image'
-import jobsWozniak from '@/images/jobs-wozniak.png'
+import jobsWozniak from '@/images/jobs_wozniak.jpg'
 
 /* const with images we want to cycle through
 1. First image static stagger-index-i or fade-up
