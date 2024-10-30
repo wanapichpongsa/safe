@@ -18,7 +18,7 @@ export default function Home() {
         <div className="w-screen h-auto" id="headline"> 
           {/* Cycle: 'SAFE Creates Markets, Streamlines UX, Increase Retention'*/}
           <div className="flex flex-col justify-center items-center p-8">
-            <h1 className="text-6xl font-bold mt-10">Only Exponential Returns</h1>
+            <h1 className="text-6xl font-bold mt-10">10x Returns</h1>
             {/* <h1 className="text-7xl font-bold">Consultants that actually BUILD</h1> {/* Catchy line where consultants actually are engineers*/}
             {/* Exponential returns Transform UX, Increase Market Share, Latest Technology*/}
             <div className="flex mt-4" id="link">
