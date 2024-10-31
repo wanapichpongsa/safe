@@ -49,20 +49,23 @@ interface BlogsProps {
 
 const Blogs = ({className}: BlogsProps) => {
   return (
-    <div className={clsx('grid grid-cols-1 md:grid-cols-3 gap-4', className)}>
+    <div className={clsx('grid grid-cols-1 md:grid-cols-3 gap-4 w-screen', className)}>
       {blogArray.map((blog) => (
-        <Link key={blog.id} href={blog.url}>
-        <div className="flex flex-col items-center justify-center gap-y-4 p-4">
-          <Image
-          src={blog.image}
-          alt={blog.id.toString()}
-          width={300}
-          height={300}
-          />
-          <p className="text-sm text-gray-500">{blog.date}</p>
-          <p className="text-lg font-bold text-left text-wrap">{blog.description}</p>
+        
+        <div key={blog.id} className="flex flex-col items-center justify-center gap-y-4 p-4">
+          <Link href={blog.url}>
+            <Image
+            src={blog.image}
+            alt={blog.id.toString()}
+            width={300}
+            height={300}
+            />
+          </Link>
+          <div className="w-[300px]">
+            <p className="text-sm text-gray-500">{blog.date}</p>
+            <p className="text-lg font-bold text-left text-wrap mt-4">{blog.description}</p>
+          </div>
         </div>
-        </Link>
       ))}
     </div>
   )

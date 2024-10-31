@@ -2,8 +2,11 @@
 
 // Next.js
 import Link from 'next/link';
+// Components
 import Carousels from '@/components/carousel';
 import Blogs from '@/components/bloglink';
+import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 // Theme: Squares, Cubes, Equilibrium
 // Retro, Tech feel
@@ -14,7 +17,8 @@ import Blogs from '@/components/bloglink';
 // X Curve. Law of exponents. (If your exponent is higher than your competitors, they'll never catch up to you)
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center p-4">
+    <main className="flex flex-col items-center justify-center">
+      <Navbar />
       <div className="" id="hero">
         <div className="w-screen h-auto" id="headline"> 
           {/* Cycle: 'SAFE Creates Markets, Streamlines UX, Increase Retention'*/}
@@ -47,12 +51,11 @@ export default function Home() {
             {/* Squares has to be squares */}
             {/* Philipp 4x Consulting hackathon winner*/}
       </div>
-      <div className="flex flex-col items-center justify-center p-4" id="blog">
-        <h2 className="text-6xl font-bold mt-20">Highlights</h2>
+      <div className="flex flex-col items-start justify-center p-4" id="blog">
+        <h2 className="text-6xl text-left font-bold mt-20 ml-4 lg:ml-24">Highlights</h2>
         <Blogs className="my-10" />
-        <div className="flex items-center justify-between">
-        </div>
       </div>
+      <Footer />
     </main>
   );
 }

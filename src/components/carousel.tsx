@@ -26,6 +26,7 @@ img and quote conflict (bad when mobile first)
 // HTML is annoying to refactor so...
 // interface Carousel {}
 // const carouselArray: Carousel[] = {}
+// return <outer element key={id}>
 
 export default function Carousels() {
   // embla hook with options (rotate through divs?)
@@ -48,8 +49,8 @@ export default function Carousels() {
           priority
           className="min-w-44 h-auto ml-14"
           />
-          <blockquote className="text-center mx-auto mt-16" id="blockquote">
-            <h2 className="text-4xl mt-12 font-bold">"Real artists ship."</h2><br></br>
+          <blockquote className="text-center mx-auto mt-8 lg:mt-16" id="blockquote">
+            <h2 className="text-2xl lg:text-4xl lg:mt-12 font-bold">"Real artists ship."</h2><br></br>
             <p className="text-2xl text-zinc-500">- Steve Jobs</p>
           </blockquote>
         </div>
@@ -66,9 +67,9 @@ export default function Carousels() {
           priority
           className="min-w-44 h-auto ml-14"
           />
-          <blockquote className="mr-8 ml-12 mt-16" id="blockquote">
+          <blockquote className="mr-8 ml-12 mt-8 lg:mt-16" id="blockquote">
             {/* */}
-            <h2 className="text-xl mt-12 font-bold text-left">
+            <h2 className="text-xl lg:mt-12 font-bold text-left">
               "The next Bill Gates will not build an operating system. 
                The next Larry Page or Sergey Brin won't make a search engine.
                If you are copying these guys, you aren't learning from them."
@@ -88,8 +89,8 @@ export default function Carousels() {
             priority
             className="min-w-44 h-auto ml-14"
             />
-            <blockquote className="mr-8 ml-12 mt-16" id="blockquote">
-              <h2 className="text-xl mt-12 font-bold text-left">
+            <blockquote className="mr-8 ml-12 mt-8 lg:mt-16" id="blockquote">
+              <h2 className="text-xl lg:mt-12 font-bold text-left">
                 "When something is important enough, you do it. 
                 Even if the odds aren't in your favor."
               </h2><br></br>
