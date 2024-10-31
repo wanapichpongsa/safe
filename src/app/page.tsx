@@ -2,7 +2,8 @@
 
 // Next.js
 import Link from 'next/link';
-import Carousel from '@/components/carousel';
+import Carousels from '@/components/carousel';
+import Blogs from '@/components/bloglink';
 
 // Theme: Squares, Cubes, Equilibrium
 // Retro, Tech feel
@@ -22,35 +23,36 @@ export default function Home() {
             {/* <h1 className="text-7xl font-bold">Consultants that actually BUILD</h1> {/* Catchy line where consultants actually are engineers*/}
             {/* Exponential returns Transform UX, Increase Market Share, Latest Technology*/}
             <div className="flex mt-4" id="link">
-              <Link href="/casestudies(s)/pearson" className="transition-all duration-300 ease-in-out hover:scale-110">CASE STUDIES</Link>
+              <Link href="#blog" className="transition-all duration-300 ease-in-out hover:scale-110">CASE STUDIES</Link>
               {/* make Live updating link */}
               {/* Beautiful search bar? */}
             </div>
           </div>
         </div>
         {/* Slider carousel + fade-up animation if possible (stagger-index-i)*/}
-        <div className="w-screen h-auto" id="hero-image">
-          <Carousel />
+        <div className="w-screen h-auto mt-16" id="hero-image">
+          <Carousels />
         </div>
       </div>
       {/* Distinct seperation */}
       {/* [How it\n  works] */}
-      <div className="w-screen h-auto justify-center items-center p-4" id="howitworks">
+      <div className="w-screen h-auto mt-20 justify-center items-center p-4" id="howitworks">
       {/* Keep left may be good */}
         <h2 className="text-7xl font-bold justify-center ml-8">[How it<br/>&nbsp;&nbsp;&nbsp;&nbsp;works]</h2> {/* Should use memory padding */}
       </div>
 
 
-      <div className="flex mt-4 items-center justify-center" id="about">
-          <h2 className="text-6xl font-bold">You're in SAFE hands</h2>
+      <div className="flex mt-20 items-center justify-center" id="about">
+          <h2 className="text-6xl font-bold">Meet team SAFE</h2>
             {/* Squares has to be squares */}
             {/* Philipp 4x Consulting hackathon winner*/}
       </div>
-      <div className="flex flex-col items-center justify-center" id="blog">
-
+      <div className="flex flex-col items-center justify-center p-4" id="blog">
+        <h2 className="text-6xl font-bold mt-20">Highlights</h2>
+        <Blogs className="my-10" />
+        <div className="flex items-center justify-between">
+        </div>
       </div>
-          
-
     </main>
   );
 }
