@@ -39,7 +39,8 @@ export function DropdownButton<T extends React.ElementType = typeof Button>(
 export function DropdownMenu({
   anchor = 'bottom',
   ...props
-}: { anchor?: NonNullable<HeadlessMenuItemsProps['anchor']>['to'] } & Omit<HeadlessMenuItemsProps, 'anchor'>) {
+  // NonNullable<HeadlessMenuItemsProps['anchor']>['to']
+}: { anchor?: 'top' | 'top end' | 'top start' | 'right' | 'right end' | 'right start' | 'bottom' | 'bottom end' | 'bottom start' | 'left' | 'left end' | 'left start' } & Omit<HeadlessMenuItemsProps, 'anchor'>) {
   return (
     <HeadlessTransition as={Fragment} leave="duration-100 ease-in" leaveTo="opacity-0">
       <HeadlessMenuItems

@@ -47,12 +47,13 @@ interface BlogsProps {
   className?: string;
 }
 
+// We want faded animation...
 const Blogs = ({className}: BlogsProps) => {
   return (
     <div className={clsx('grid grid-cols-1 md:grid-cols-3 gap-4 w-screen', className)}>
       {blogArray.map((blog) => (
         
-        <div key={blog.id} className="flex flex-col items-center justify-center gap-y-4 p-4">
+        <div key={blog.id} className="flex flex-col px-6 py-4 items-center">
           <Link href={blog.url}>
             <Image
             src={blog.image}
@@ -61,7 +62,7 @@ const Blogs = ({className}: BlogsProps) => {
             height={300}
             />
           </Link>
-          <div className="w-[300px]">
+          <div className="w-[300px] my-4 gap-y-4">
             <p className="text-sm text-gray-500">{blog.date}</p>
             <p className="text-lg font-bold text-left text-wrap mt-4">{blog.description}</p>
           </div>

@@ -44,10 +44,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+      </head>
       <body
         className={clsx(
           "h-full antialiased font-display",
-          "bg-white lg:bg-zinc-100 dark:bg-zinc-900 dark:lg:bg-zinc-950",
+          "bg-white lg:bg-zinc-100 dark:bg-zinc-800",
           outfitRegular.variable, 
           outfitBold.variable, 
         )}

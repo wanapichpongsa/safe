@@ -28,6 +28,9 @@ img and quote conflict (bad when mobile first)
 // const carouselArray: Carousel[] = {}
 // return <outer element key={id}>
 
+// Refactor steps: .map(image) =>, .map(quote) => (maybe custom for quote [therefore className object attribute])
+// Quote to author combinations: xl:lg, lg:md, md:sm
+
 export default function Carousels() {
   // embla hook with options (rotate through divs?)
   const [emblaRef] = useEmblaCarousel({
@@ -37,27 +40,27 @@ export default function Carousels() {
   })
   return (
     <div className="overflow-hidden" ref={emblaRef}>
-      <div className="flex[0_0_100%]">
+      <div className="flex[0_0_100%] mx-4 md:mx-8">
         {/* slide 1, flex shrink grow 1 */}
         {/* 900 x 600 */}
-        <div className="sm:flex flex-1" id="slide1">
+        <div className="md:flex flex-1" id="slide1">
           <Image
           src={jobsWozniak.src} 
           alt="apple"
           width={900}
           height={600}
           priority
-          className="min-w-44 h-auto ml-14"
+          className="md:mr-4 w-full max-w-2xl lg:max-w-4xl md:min-w-44 h-auto"
           />
-          <blockquote className="text-center mx-auto mt-8 lg:mt-16" id="blockquote">
+          <blockquote className="text-center my-4 lg:mx-8 lg:mt-16" id="blockquote">
             <h2 className="text-2xl lg:text-4xl lg:mt-12 font-bold">"Real artists ship."</h2><br></br>
-            <p className="text-2xl text-zinc-500">- Steve Jobs</p>
+            <p className="text-lg text-zinc-500 mb-8">- Steve Jobs</p>
           </blockquote>
         </div>
       </div>
         {/* Slide 2 */}
-      <div className="flex[0_0_100%]">
-        <div className="sm:flex flex-1" id="slide2">
+      <div className="flex[0_0_100%] mx-4 md:mx-8">
+        <div className="md:flex flex-1" id="slide2">
           {/* 700 x 525 */}
           <Image
           src={paypalMafia.src}
@@ -65,21 +68,21 @@ export default function Carousels() {
           width={900}
           height={600}
           priority
-          className="min-w-44 h-auto ml-14"
+          className="md:mr-4 w-full max-w-2xl lg:max-w-4xl md:min-w-44 h-auto"
           />
-          <blockquote className="mr-8 ml-12 mt-8 lg:mt-16" id="blockquote">
+          <blockquote className="mx-16 my-4 lg:mt-16" id="blockquote">
             {/* */}
-            <h2 className="text-xl lg:mt-12 font-bold text-left">
+            <h2 className="text-md lg:text-xl lg:mt-12 font-bold text-left">
               "The next Bill Gates will not build an operating system. 
                The next Larry Page or Sergey Brin won't make a search engine.
                If you are copying these guys, you aren't learning from them."
               </h2><br></br>
-            <p className="text-2xl text-zinc-500">- Peter Thiel, Paypal co-founder & author of Zero to One</p>
+            <p className="text-sm lg:text-lg text-zinc-500 mb-8">- Peter Thiel, Paypal co-founder & author of Zero to One</p>
           </blockquote>
         </div>
         </div>
-        <div className="flex-[0_0_100%]">
-          <div className="sm:flex flex-1" id="slide3">
+        <div className="flex-[0_0_100%] mx-4 md:mx-8">
+          <div className="md:flex flex-1" id="slide3">
             {/* 700 x 525 */}
             <Image
             src={elonMusk.src}
@@ -87,14 +90,14 @@ export default function Carousels() {
             width={900}
             height={600}
             priority
-            className="min-w-44 h-auto ml-14"
+            className="md:mr-4 w-full max-w-2xl lg:max-w-4xl md:min-w-44 h-auto"
             />
-            <blockquote className="mr-8 ml-12 mt-8 lg:mt-16" id="blockquote">
-              <h2 className="text-xl lg:mt-12 font-bold text-left">
+            <blockquote className="mr-8 ml-12 my-4 lg:mt-16" id="blockquote">
+              <h2 className="text-xl lg:mt-12 font-bold text-left w-full">
                 "When something is important enough, you do it. 
                 Even if the odds aren't in your favor."
               </h2><br></br>
-              <p className="text-2xl text-zinc-500">- Elon Musk</p>
+              <p className="text-md lg:text-lg text-zinc-500 mb-8">- Elon Musk</p>
             </blockquote>
           </div>
         </div>
