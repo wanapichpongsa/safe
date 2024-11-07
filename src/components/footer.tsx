@@ -1,5 +1,5 @@
 "use client";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/catalyst/input";
 import Link from "next/link";
 
 // Burning question with nav and footer: Can we use semantic div elements in components?

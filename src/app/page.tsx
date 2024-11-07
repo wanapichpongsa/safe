@@ -22,7 +22,7 @@ export default function Home() {
       <div className="" id="hero">
         <div className="w-full h-auto" id="headline">
           {/* Cycle: 'SAFE Creates Markets, Streamlines UX, Increase Retention'*/}
-          <div className="flex flex-col justify-center items-center p-8 mt-28">
+          <div className="flex flex-col justify-center items-center p-8 mt-36">
             <h1 className="text-4xl md:text-6xl font-bold">10x Returns</h1>
             {/* <h1 className="text-7xl font-bold">Consultants that actually BUILD</h1> {/* Catchy line where consultants actually are engineers*/}
             {/* Exponential returns Transform UX, Increase Market Share, Latest Technology*/}
@@ -34,14 +34,14 @@ export default function Home() {
           </div>
         </div>
         {/* Slider carousel + fade-up animation if possible (stagger-index-i)*/}
-        <div className="w-screen h-auto justify-center md:justify-start" id="hero-image">
+        <div className="w-screen h-auto justify-center md:justify-start mt-12" id="hero-image">
           <Carousels />
         </div>
       </div>
       {/* Input later */}
       
-      <div className="flex flex-col md:items-start justify-center p-4" id="blog">
-        <h2 className="text-6xl text-center md:text-left font-bold mt-20 ml-4 lg:ml-24">Highlights</h2>
+      <div className="flex flex-col md:items-start justify-center p-4 mt-28" id="blog">
+        <h2 className="text-6xl text-center lg:text-left font-bold mt-20 ml-4 lg:ml-24">Highlights</h2>
         <Blogs className="my-10" />
       </div>
       <Footer />

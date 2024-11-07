@@ -50,7 +50,7 @@ interface BlogsProps {
 // We want faded animation...
 const Blogs = ({className}: BlogsProps) => {
   return (
-    <div className={clsx('grid grid-cols-1 md:grid-cols-3 gap-4 w-screen', className)}>
+    <div className={clsx('grid grid-cols-1 lg:grid-cols-3 gap-4 w-screen', className)}>
       {blogArray.map((blog) => (
         
         <div key={blog.id} className="flex flex-col px-6 py-4 items-center">

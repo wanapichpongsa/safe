@@ -7,35 +7,19 @@ import clsx from "clsx";
 const outfitRegular = localFont({
   src: [
     {
-      path: "./fonts/Outfit-Regular.woff2",
+      path: "./fonts/Outfit.woff2",
       weight: "100 400",
     },
-    {
-      path: "./fonts/Outfit-Regular.woff",
-      weight: "100 400",
-    }
   ],
-  variable: "--font-outfit-regular",
-});
-
-const outfitBold = localFont({
-  src: [
-    {
-      path: "./fonts/Outfit-Bold.woff2", 
-      weight: "100 400",
-    },
-    {
-      path: "./fonts/Outfit-Bold.woff",
-      weight: "100 400",
-    }
-  ],
-  variable: "--font-outfit-bold",
+  variable: "--font-outfit",
 });
 
 export const metadata: Metadata = {
   title: "SAFE Investments",
   description: "10X ROI on technology",
 };
+
+// Screw all of that, we're going with OG OS fonts: font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 
 export default function RootLayout({
   children,
@@ -50,9 +34,8 @@ export default function RootLayout({
       <body
         className={clsx(
           "h-full antialiased font-display",
-          "bg-white lg:bg-zinc-100 dark:bg-zinc-800",
+          "bg-white lg:bg-zinc-100 dark:bg-zinc-800 font-sans",
           outfitRegular.variable, 
-          outfitBold.variable, 
         )}
         suppressHydrationWarning
       >
