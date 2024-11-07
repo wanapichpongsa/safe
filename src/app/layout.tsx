@@ -3,6 +3,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import clsx from "clsx";
 
+// Vercel Analytics
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 // Outfit doesn't look that good, I might just use Neue Helvetica
 const outfitRegular = localFont({
   src: [
@@ -40,6 +44,8 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <Analytics /> {/* Pretty cool, wonder how it works granularly */}
+        <SpeedInsights />
       </body>
     </html>
   );
