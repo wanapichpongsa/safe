@@ -2,6 +2,21 @@ import type { MDXComponents } from 'mdx/types'
  
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    h1: (children) => (
+      <h1 className="text-center text-4xl font-bold leading-loose" {...children} />
+    ),
+    h2: (children) => (
+      <h2 className="text-center text-2xl font-bold leading-loose" {...children} />
+    ),
+    h3: (children) => (
+      <h3 className="text-center text-xl font-bold leading-loose" {...children} />
+    ),
+    p: (children) => (
+      <p className="text-left leading-relaxed whitespace-pre-wrap" {...children} />
+    ),
+    a: (children) => (
+      <a className="text-center hover:underline" {...children} />
+    ),
     ...components,
   }
 }

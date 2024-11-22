@@ -1,0 +1,35 @@
+import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
+import Image from 'next/image';
+
+import Solution from '@/images/solution.png';
+import YouTube from '@/components/youtube';
+import LucidChart from '@/components/lucidchart';
+
+<Navbar />
+<div className="prose flex flex-col justify-center items-center mt-40 mb-36 lg:mx-16 lg:px-72">
+# **10X**
+<br />
+<Image src={Solution.src} className="flex justify-center items-center" alt="solution" width={200} height={350} />
+<br /><br /><br />
+### **The Solution** 
+The proposed solution to Pearson is an integrated micro-learning platform to be added to Pearson’s existing digital service Pearson+. The system would create daily short gamified sprints of 2-3 minutes based on data on students' weak points in course content. By incorporating gamified elements such as points, badges, and leaderboards, this system creates a motivating environment where students engage consistently — a current weak point for Pearson. 
+</div>
+<YouTube id="9W0aKDvQR3g" />
+<br /><br /><br /><br />
+### \[Customer Journey Map\]
+<LucidChart />
+
+<div className="prose flex flex-col justify-center items-center mb-36 lg:mx-16 lg:px-72">
+### **Consumer and Industry Trends** 
+The proposed micro-learning solution directly addresses current industry and customer trends toward digital, flexible, and personalised learning experiences. Today’s learners increasingly favour on-the-go, digital education that can adapt to various life stages and career needs, with 61% of global learners supporting lifelong learning models for ongoing skill relevance (Pearson, 2020). Research supports the use of gamification as a way to increase motivation, engagement, and comprehension in educational settings (Jaramillo-Mediavilla et al., 2024; Sailer et al., 2017). Additionally, spaced repetition is a method proven to reinforce long-term memory retention and understanding of educational material (Roediger et al., 2011). By fostering deeper engagement and improved comprehension, this solution would strengthen Pearson’s value to students and continue to position it as a leading provider in digital education.
+<br />
+### **Adding value to end-customers**
+Our solution aims to add substantial value to students and educators by leveraging AI-driven micro-learning tools that support effective self-regulation, engagement, and knowledge retention. Pearson's digital resources have shown that goals such as improving engagement, accessibility, and confidence, alongside providing assessment, are crucial for both students and teachers (Pearson, 2021). Our micro-learning solution aligns with these goals by facilitating accurate monitoring of student progress, an aspect essential for meaningful self-regulated learning. Studies show that accurate self-monitoring enables students to make informed learning decisions, such as choosing materials for review or seeking help when necessary (van de Pol et al., 2020). By integrating AI to assess student-generated diagrams or concept maps, our solution enhances “diagnosticity”—the reliability of cues about students' learning status—by identifying patterns of misconception or difficulty (van de Pol et al., 2020). This targeted feedback allows for tailored micro-learning sessions and spaced repetition, thus reinforcing understanding and retention.
+<br />
+Additionally, this approach aligns closely with Pearson's commitment to using AI in ways that genuinely support students' learning journeys (Pearson, 2023). Unlike current AI features that allow students to generate practice questions based on their reading material, our micro-learning solution aims to go further by analysing each student’s specific areas of weakness, such as errors made and time taken to complete tasks. Based on this analysis, the solution creates tailored, daily 2–3-minute “sprints” of questions focused on reinforcing challenging areas. These personalised sessions encourage consistent progress and engagement without overwhelming students. However, minor limitations exist; reliance on AI-generated cues for self-assessment may limit students' abilities to independently monitor their learning progress (van de Pol et al., 2020). Without real-time teacher involvement, students might struggle to accurately self-assess. Our solution, however, aims to bridge this gap by supporting the learning journey, providing personalised, data-driven insights that complement the guidance of instructors.
+<br />
+### **AI Component**
+The micro-learning solution incorporates AI as it uses it to provide more tailored content recommendations by identifying and analysing student strengths and weaknesses by collecting data from student responses and interactions with the content. This, in turn, enables a more efficient learning experience when it comes to the students as they can have content that reflects their specific needs. Pearson’s MyLab and Mastering already incorporate some elements of AI, but this is done to a limited extent and lack personalisation. The data required would be mostly concerned with performance and interaction data, which Pearson already collects. However, systemic biases are a significant concern (Akgun et al., 2022). The micro-learning system may rely on historical data and learning patterns to make tailored learning content; students from underrepresented groups may not be able to receive this more targeted feedback as the system may use more general historical data at the early stages of the data-gathering process. This can be mitigated by training the AI on a diverse dataset that includes students from different backgrounds. 
+</div>
+<Footer />

@@ -1,6 +1,6 @@
 "use client";
 
-const LucidChart = () => {
+export const LucidChart = () => {
   return (
     <div className="w-[640px] height-[480px] m-10 relative">
       <iframe 

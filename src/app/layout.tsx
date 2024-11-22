@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import clsx from "clsx";
 
-// Vercel Analytics
+// Vercel Analytics (Edge Network)
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 

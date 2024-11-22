@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import Link from "next/link";
 import Image from "next/image";
-import Astronaut from "@/images/astronaut.jpg";
+import Kid from "@/images/kid.jpg";
 import Education from "@/images/education.jpg";
 // import Pearson from "@/public/pearson.png";
 import Tutor from "@/images/tutor.jpg";
@@ -23,23 +23,23 @@ const blogArray: Blog[] = [
   {
     id: 1,
     date: "24th October 2024",
-    image: Astronaut.src,
+    image: Kid.src,
     url: "/casestudies/pearson/phase1",
-    description: "Pearson at risk of losing their main source of revenue"
+    description: "Phase 1: Pearson is in trouble"
   },
   {
     id: 2,
     date: "27th October 2024",
     image: Education.src,
     url: "/casestudies/pearson/phase2",
-    description: "How a micro-learning app can 10x Pearson's competitive advantage"
+    description: "Phase 2: What's saving Pearson?"
   },
   {
     id: 3,
     date: "29th October 2024",
     image: Tutor.src,
     url: "/casestudies/pearson/phase3",
-    description: "Our presentation"
+    description: "Phase 3: This"
   }
 ];
 
