@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Kid from "@/images/kid.jpg";
 import Education from "@/images/education.jpg";
-// import Pearson from "@/public/pearson.png";
 import Tutor from "@/images/tutor.jpg";
 
 // I need unique blog1, blog2, blog3 with property image, url/src(whatever link uses) and description
